@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:scrollbars="none"
+    android:padding="20dp"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Judul"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Judul"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Tanggal Mulai"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tgl_mulai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="none"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Tanggal Mulai"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Tanggal Selesai"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tgl_selesai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="none"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Tanggal Selesai"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Lokasi"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:paddingTop="15dp"
+            android:gravity="start"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Lokasi"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Deskripsi"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:paddingTop="15dp"
+            android:gravity="start"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Deskripsi"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Produk"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/produk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Produk"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Berat (Kg)"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="0"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Harga"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="0"/>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="IKlan Lele"
+                    android:textColor="@color/blue_grey_800"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/jumlah_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:drawablePadding="15dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:inputType="number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/satuan_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:entries="@array/list_satuan"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="IKlan Bandeng"
+                    android:textColor="@color/blue_grey_800"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/jumlah_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:drawablePadding="15dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:inputType="number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/satuan_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:entries="@array/list_satuan"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="IKlan Gurame"
+                    android:textColor="@color/blue_grey_800"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/jumlah_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:drawablePadding="15dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:inputType="number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/satuan_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:entries="@array/list_satuan"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Udang"
+                    android:textColor="@color/blue_grey_800"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/jumlah_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:drawablePadding="15dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:inputType="number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/satuan_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:entries="@array/list_satuan"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/rounded_corners_edittext_light"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Gambar"
+            android:textColor="@color/blue_grey_800"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_image_150dp"
+            android:scaleType="fitXY"
+            android:id="@+id/gambar"/>
+
+        <TextView
+            android:id="@+id/filename"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Filename"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <Button
+            android:id="@+id/simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners_button_new"
+            android:text="Create"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Daftar"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Masukkan Nama" />
+
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/ed_email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Masukkan Email" />
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/ed_telepon"
+            android:drawableStart="@drawable/ic_phone_android_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="number"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="6281xxxxxxxxx" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_marginTop="15dp"
+                android:id="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="50dp"
+                android:entries="@array/list_users"
+                android:drawablePadding="15dp"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark"
+                android:background="@drawable/spinner_draw"
+                />
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_assignment_ind_black_24dp"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/ed_alamat"
+            android:drawableStart="@drawable/ic_map_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Masukkan Alamat" />
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:inputType="textPassword|textNoSuggestions"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Masukkan Password" />
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/ed_password_confrim"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:inputType="textPassword|textNoSuggestions"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Konfirmasi Password" />
+
+        <Button
+            android:id="@+id/daftarBtn"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_button_new"
+            android:text="Daftar"
+            android:paddingLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+            android:paddingRight="10dp"
+            android:drawableTint="#ffffff"
+            app:backgroundTint="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#120D26"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Sudah Punya Akun?"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/masuk"
+                    android:text="Masuk"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

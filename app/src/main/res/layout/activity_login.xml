@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:gravity="center_vertical|center"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Login"
+            android:layout_marginBottom="25dp"/>
+
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:inputType="textNoSuggestions"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Masukkan Email" />
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext_light"
+            android:drawablePadding="15dp"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            android:inputType="textPassword|textNoSuggestions"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:hint="Masukkan Password" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/lupapassword"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Lupa Password"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners_button_new"
+            android:text="Masuk"
+            android:paddingLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+            android:paddingRight="10dp"
+            android:drawableTint="#ffffff"
+            app:backgroundTint="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#120D26"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Tidak Punya Akun?"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/daftar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Daftar"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

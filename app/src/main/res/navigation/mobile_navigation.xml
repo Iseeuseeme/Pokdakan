@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dasboard">
+
+    <fragment
+        android:id="@+id/nav_dasboard"
+        android:name="app.pokdakan.fragment.home.HomeFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="app.pokdakan.fragment.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="app.pokdakan.fragment.help.HelpFragment"
+        android:label="Help Faqs"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="app.pokdakan.fragment.about.AboutFragment"
+        android:label="Help Faqs"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_sign_out"
+        android:name="app.pokdakan.fragment.sign.SignFragment"
+        android:label="Sign Out"
+        tools:layout="@layout/fragment_help" />
+</navigation>

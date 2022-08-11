@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Are you sure to sign out?"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_corners_button_new"
+        android:text="Sure"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:drawableTint="#ffffff"
+        app:backgroundTint="@color/colorPrimaryDark"/>
+
+</LinearLayout>
